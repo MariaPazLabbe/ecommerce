@@ -22,8 +22,8 @@ body{
   justify-content: space-between;
   align-items: center;
   flex-direction: row;
-  padding-left: 5rem;
-  padding-right: 5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 .nav i{
 color: white;
@@ -35,16 +35,26 @@ color: white;
 }
 .sidebar{
   grid-area: sidebar;
-  background-color: white;
   height: 65vh;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
+.cards {
+  display: flex;
+  background-color: white;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  height: 20rem;
+  width: 23rem;
+  border: solid 1px  rgb(209, 209, 209);
+}
 footer{
   grid-area: footer;
   height: 10vh; 
+  margin-top: 30rem;
 }
 .footer{
   background-color: cornflowerblue;
@@ -76,16 +86,6 @@ footer{
 .dropdown-center{
   padding-bottom: 2rem;
 }
-.cards {
-  display: flex;
-  background-color: white;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-  height: 20rem;
-  width: 23rem;
-  border: solid 1px  rgb(209, 209, 209);
-}
 .disguise{
   display:none;
 }
@@ -111,7 +111,6 @@ button {
 .nav p{
   display:none;
 }
-
 @media (min-width:576px){
 body{
   display: grid;
@@ -142,11 +141,10 @@ body{
 .sidebar{
   display: flex;
   flex-direction: column;
-  height: auto;
-  
+  height: auto; 
 }
-.seleccion{
- 
+.footer{
+  margin-top: 0rem;
 }
 .footer{
   height: 15vh;
