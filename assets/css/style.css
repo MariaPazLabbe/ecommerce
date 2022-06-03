@@ -1,0 +1,85 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+html {
+  height: 100vh;}
+
+
+nav {
+    padding: 10px;
+    grid-area: menu;
+    background: #0037a1;
+    color: white;
+}
+
+main {
+    grid-area: seccion-principal;
+    padding: 10px;
+}
+.filter p{
+    display: flex;
+    justify-content: center;
+    
+}
+
+footer {
+    grid-area: pie-de-pagina;
+    background: cornflowerblue;
+    color: white;
+    padding: 10px;
+}
+.footerbox{
+    display: flex;
+    justify-content: center;
+}
+.footertext{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: flex;
+    justify-content: center;
+
+}
+div {
+    display: grid;
+    grid-template-rows: 1fr 10fr 1fr;
+    grid-template-areas:
+        "menu"
+        "seccion-principal"
+        "pie-de-pagina";
+}
+
+/* Large -> 992px */
+@media (min-width: 992px) {
+    div {
+        grid-template-areas: 
+            "menu seccion-principal"
+            "menu seccion-principal"
+            "menu pie-de-pagina";
+        grid-template-columns: 1fr 10fr;
+    }
+}
+
+/* Card*/
+
+.cards {
+  display: flex;
+  margin: 1rem;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  height: 20rem;
+}
+.cards img {
+  width: 12rem;
+}
+.img {
+  padding-left: 8rem;
+}
+button {
+  padding-left: 2rem;
+  padding-right: 2rem;
+  background-color: cornflowerblue;
+  border: solid 1px white;
+  color: white;
+}
