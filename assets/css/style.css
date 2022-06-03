@@ -1,3 +1,4 @@
+
 * {
   margin: 0px;
   padding: 0.5px;
@@ -5,7 +6,6 @@
 html {
   height: 100vh;
 }
-@media (max-width: 576px) {
 body{
   display: grid;
   grid-template-areas: 
@@ -16,7 +16,7 @@ body{
 }
 .nav{
   grid-area: nav;
-  background: cornflowerblue;
+  background-color: cornflowerblue;
   height: 10vh;
   display: flex;
   justify-content: space-between;
@@ -24,31 +24,30 @@ body{
   flex-direction: row;
   padding-left: 5rem;
   padding-right: 5rem;
-  
-
 }
 .nav i{
 color: white;
 }
 .search{
   grid-area: search;
-  background: rgb(201, 201, 201);
+  background-color: rgb(201, 201, 201);
   height: 15vh;
-
 }
 .sidebar{
   grid-area: sidebar;
-  background: white;
+  background-color: white;
   height: 65vh;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
-.footer{
+footer{
   grid-area: footer;
-  background: cornflowerblue;
-  height: 10vh;
+  height: 10vh; 
+}
+.footer{
+  background-color: cornflowerblue;
 }
 .footerbox{
   display: flex;
@@ -64,7 +63,6 @@ color: white;
   justify-content: center;
   color: white;
 }
-
 .search p{
   display: flex;
   justify-content: center;
@@ -78,7 +76,6 @@ color: white;
 .dropdown-center{
   padding-bottom: 2rem;
 }
-
 .cards {
   display: flex;
   background-color: white;
@@ -88,6 +85,9 @@ color: white;
   height: 20rem;
   width: 23rem;
   border: solid 1px  rgb(209, 209, 209);
+}
+.disguise{
+  display:none;
 }
 .cards p{
   color: black;
@@ -108,6 +108,8 @@ button {
 .seleccion{
   padding-top: 2rem;
 }
+.nav p{
+  display:none;
 }
 
 @media (min-width:576px){
@@ -120,28 +122,68 @@ body{
   grid-template-columns: 3fr 10fr;
 }
 .nav{
-  grid-area: nav;
-  background:blue;
+  flex-direction: column;
+  height: auto;
   height: 85vh;
-
+  width: 25vw;
+  padding-top: 5rem;
+  padding-bottom: 13rem;
+  color: white;
+}
+.nav p{
+  display: block;
+}
+.menu{
+  display: none;
 }
 .search{
-  grid-area: search;
-  background: black;
   height: 15vh;
-
 }
 .sidebar{
-  grid-area: sidebar;
-  background: white;
-
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  
+}
+.seleccion{
+ 
 }
 .footer{
-  grid-area: footer;
-  background: brown;
   height: 15vh;
-
+  grid-area: footer;
+  width: 25vw;
+  background-color: rgb(182, 179, 179);
 }
-
-
+.buy{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+.cards {
+  display: flex;
+  background-color: white;
+  height: 11rem;
+  width: 13rem;
+  border: solid 1px  rgb(209, 209, 209);
+}
+.cards p{
+  color: black;
+}
+.cards img {
+  width: 45%;
+}
+.img {
+  padding-left: 13rem;
+}
+button {
+  padding-left: 3rem;
+  padding-right: 3rem;
+  background-color: cornflowerblue;
+  border: solid 1px white;
+  color: white;
+}
+.seleccion{
+  padding-top: 2rem;
+}
 }
